@@ -1,28 +1,140 @@
+/*les différentes fontes Googles choisies
+font-family: 'Gochi Hand', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inter:wght@200;300&family=Open+Sans&family=Ubuntu&display=swap');
+
+/*gestion des différents blocs (div, image, iframe, paragraphe etc) pour les différents navigateurs afin que cela reste cohérent de navigateur en navigateur et que mes blocs ne risquent pas de changer constamment de taille*/
+*{
+	box-sizing:border-box;
+}
+
+/*CSS pour tout le site*/
+
+#container{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+#click{
+	height:5vw;
+	width:5vw;
+}
 h1 {
 	color:pink;
+	text-align:center;
+	font-family:'Gochi Hand', cursive;
+	font-size:5em;
+	margin: 50px 0 10px;
+	line-height:1em;
 }
 h2{
-	color:pink
+	color:pink;
+	font-family:'Gochi Hand', cursive;
+}
+hr{
+	width:50%;
+	height: 2px;
+	border: none;
+	background:pink;
+	}
+body{
+	text-align:justify;
+	font-family: 'Ubuntu', sans-serif;
+	line-height:1.4;
+	}
+main{
+	margin:50px 0;
+}
+
+footer, figcaption{
+	font-size:0.75em;
+	color:rgba(0,0,0,0.5);
 }
 
 footer{
-
-text-align:center;
-
-position:absolute;
-
-bottom:0;
-
-width:100%;
-
-padding-top:50px;
-
-height:50px;
-
+	text-align:center;
+	/*position:absolute;*/
+	bottom:0;
+	width:100%;
+	padding-top:50px;
+	height:50px;
 }
-#creme{
-	background-image: url("mon_site_prefo/image/carnet_girly.jpg");
-	background-size:contain;
-	height:600px;
+details{
+	text-align:center;
+	color:purple;
+	font-size:3em;
+	font-family:'Gochi Hand', cursive;
+	list-style:none;
+}
+/*summary et menu fait par moi avec le support de pierre pour les recherches et explications*/
+/*pour supprimer la fleche presente par defaut dans summary et créer un curseur absent par défaut*/
+details>summary{
+	list-style:none;
+	cursor:pointer;
+}
+details > summary::webkit-details-marker {
+	display:none;
+}
+/*ce qui va concerner le sous-ligné des liens que je ne veux pas*/
+menu a{
+	text-decoration:none;
+}
+
+/*spécifications générales*/
+menu{
+	list-style:none;
+	padding:0;
+	margin-bottom:3.5em;
+	text-align:center;
+	font-size:0.5em;
+}
+figcaption{
+	display:block;
+	text-align:center;
+}
+
+/*CSS pour mon index*/
+#pigicorn{
+	margin:0 auto;
+	display:block;
+}
+
+/*CSS de mon moi passé*/
+#bisounours{
+	margin:0 auto;
+	display:block;
+}
+
+/*CSS de la visite*/
+/*tout ce qui est half a été fait avec Pierre*/
+.half{
+	max-width:48%;
+	display: inline-block;
+}
+.half.left{
+	text-align:left;
+	vertical-align:top;
+}
+.half.right{
+	text-align:left;
+}
+/*en choississant padding on met directement les 4 valeurs. D'abord top, puis right, bottom et enfin left. Il s'exprime en */
+#texte-bip{
+	padding:0 2em 0 0;
+	text-align:justify;
+}
+#texte-horaire{
+	padding:3em 0 0 2.5em;	
+	text-align:justify;
+}
+#batiment img{
+	width:100%;
+}
+
+/*CSS pour ma rencontre*/
+#stib{
 	
 }
