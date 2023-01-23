@@ -15,7 +15,6 @@ font-family: 'Ubuntu', sans-serif;
 	box-sizing:border-box;
 }
 #click{
-	/*height:50px;*/
 	width:2.5em;
 }
 h1{
@@ -82,7 +81,6 @@ body{
 }
 header {
     /* Pour que le header soit toujours apparent, on le sort du flux et on le colle en haut */
-    /*position:fixed;*/
     top:0;
 	width:100%;
     padding:1.5em 1em 1em 1em;
@@ -118,7 +116,7 @@ menu{
 	color:#ffe100;
 }
 .menu.vert{
-	color:##73db02;
+	color:#73db02;
 }
 .menu.azure{
 	color:#00e3b6;
@@ -126,7 +124,6 @@ menu{
 .menu.bleu{
 	color:#0098e0;
 }
-
 /*pour retirer le sous-ligné des liens de mon menu*/
 menu a{
 	text-decoration:none;
@@ -156,10 +153,6 @@ footer, figcaption{
 	color:rgba(0,0,0,0.5);
 }
 footer{
-	/*position:fixed;*/
-	/*bottom:0;*/
-	/*width:100%;
-	height:3.5rem;*/
 	text-align:center;
 	padding:1em; 	
 }
@@ -320,8 +313,4 @@ hr{
 	text-align:center;
 	padding: 2em 4em;	
 	margin-top:0;
-/*autre test de couleur
-	background: #a770ef; 
- /* background: -webkit-linear-gradient(to top, #a770ef, #cf8bf3, #fdb99b); 
- /* background: linear-gradient(to top, #a770ef, #cf8bf3, #fdb99b); */
 }
